@@ -5,3 +5,8 @@ langchain_huggingface
 langchain_community
 langchain_core
 langchain_pinecone
+transformers
+pandas
+fitz
+telebot
+python-dotenv
