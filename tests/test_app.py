@@ -6,7 +6,7 @@ def test_app_starts():
     try:
         # Inicia o subprocesso
         process = subprocess.Popen(
-            ["python", "app.py"],
+            ["python", "app/app.py"],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
         )
