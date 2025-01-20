@@ -11,6 +11,5 @@ nlp = pipeline("question-answering", model=model_name)
 def calendar_response(question):
     result = nlp(question=question, context=context)
     answer= result['answer']
-    #answer = str(os.listdir('app/utils/'))
 
     return answer
