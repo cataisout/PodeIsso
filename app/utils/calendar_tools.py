@@ -1,7 +1,9 @@
 import transformers
 from transformers import pipeline
+import os
 
-f = open("calendar_context.txt", "r")
+print(os.listdir())
+f = open("./calendar_context.txt", "r")
 context = f.read()
 
 model_name = 'pierreguillou/bert-base-cased-squad-v1.1-portuguese'
