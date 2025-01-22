@@ -56,7 +56,6 @@ if user_input := st.chat_input("Faça sua pergunta sobre regulamentos ou prazos 
             st.session_state.messages.append({"role": "assistant", "content": response})
             
         except Exception as e:
-            #error_message = "Desculpe, ocorreu um erro ao processar sua solicitação. 😓"
-            error_message = e
+            error_message = "Desculpe, ocorreu um erro ao processar sua solicitação. 😓"
             st.markdown(error_message)
             st.session_state.messages.append({"role": "assistant", "content": error_message})
